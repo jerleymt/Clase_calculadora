@@ -1,4 +1,4 @@
-   #include "ope.h"
+   #include "ope.hpp"
 
     clase_operacion::clase_operacion(){}
     

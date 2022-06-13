@@ -1,6 +1,6 @@
-# ifndef clase_operacion_h
-# define clase_operacion_h
-
+// # ifndef clase_operacion_h
+// # define clase_operacion_h
+#pragma once
 #include <iostream>
 class clase_operacion{
     private:
@@ -22,4 +22,4 @@ class clase_operacion{
     float multiplicacion();
     float divicion();
 };
-#endif
+// #endif

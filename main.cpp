@@ -1,4 +1,4 @@
-#include "ope.h"
+#include "ope.hpp"
 
 int main(){
     clase_operacion calculadora;
@@ -12,4 +12,4 @@ int main(){
     std::cout<<n1 <<" x "<<n2<<" = "<<calculadora.multiplicacion()<<std::endl;
     std::cout<<n1 <<" ÷ "<<n2<<" = "<<calculadora.divicion()<<std::endl;
     return 0;
-}
+}   
