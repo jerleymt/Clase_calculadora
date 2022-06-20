@@ -1,4 +1,4 @@
-#include "ope.hpp"
+#include "ope.cpp"
 
 int main(){
     clase_operacion calculadora;
