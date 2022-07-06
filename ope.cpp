@@ -1,9 +1,9 @@
-   #include "ope.hpp"
+   #include "ope.h"
 
     clase_operacion::clase_operacion(){}
     
     clase_operacion::~clase_operacion(){
-        std::cout<<"\nThis shit is over";
+        std::cout<<"";
     }
 
 
