@@ -1,15 +1,84 @@
-#include "ope.cpp"
+#include "menu.h"
 
 int main(){
-    clase_operacion calculadora;
-    calculadora.set_numero1(5);
-    calculadora.set_numero2(25);
-    float n1 = calculadora.get_numero1();
-    float n2 = calculadora.get_numero2();
-    std::cout<<"Se obtuveron los numeros "<<calculadora.get_numero1()<<" y "<<calculadora.get_numero2()<<std::endl;    
-    std::cout<<n1 <<" + "<<n2<<" = "<<calculadora.suma()<<std::endl;
-    std::cout<<n1 <<" - "<<n2<<" = "<<calculadora.resta()<<std::endl;
-    std::cout<<n1 <<" x "<<n2<<" = "<<calculadora.multiplicacion()<<std::endl;
-    std::cout<<n1 <<" ÷ "<<n2<<" = "<<calculadora.divicion()<<std::endl;
-    return 0;
-}   
+bool bandera = true;
+char continuar;
+ while(bandera){
+
+  menu();
+  
+  std::cout<<"deseas continuar (Y/N)"<<std::endl;
+    std::cin>>continuar;
+    if (continuar == 'y'){
+        bandera = true;
+    }
+    else if (continuar == 'n'){
+        bandera = false;
+    }
+ }
+} 
+
+
+
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+#include <fstream>  // Para ofstream
+
+int main() {
+  bool bandera = true;
+  ofstream fich("ejemplo.txt");
+  string prueba;
+  int contador = 0;
+
+  while(bandera){
+  float n1, n2;
+  char op;
+  double r;
+  string respuesta;
+  cout<<"Ingrese operador (+,-,,/,#): ";
+  cin>>op;
+  cout<<"Ingrese primer Nro: ";
+  cin>>n1;
+  cout<<"Ingrese segundo Nro: ";
+  cin>>n2;
+
+
+  switch(op){case '+': r=n1+n2; break;
+             case '-': r=n1-n2; break;
+             case '*': r=n1*n2; break;
+             case '/': r=n1/n2; break;
+             default: cout<<"Operador no definido";
+             exit(1);
+             }
+  cout<<"El resultado es: "<< r << endl;
+
+
+
+  fich << n1 << " " << op << " " << n2 << " = " << r <<  endl;
+  contador = contador + 1;
+
+  ifstream fich("ejemplo.txt");
+  for(int i = 0; i < contador; i++){
+  getline(fich, prueba);
+  cout << prueba  << endl;
+  }
+
+  cout<<"Quieres continuar?" << endl;
+  cin>>respuesta;
+  if(respuesta == "si"){
+    bandera = true;
+  }
+    else{
+      bandera = false;
+    }
+
+
+    }
+
+  }
+  */
