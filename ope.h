@@ -5,7 +5,7 @@
 #include <fstream>
 
 class clase_operacion{
-    private:
+    private: 
     float _numero,_numero2;
 
     
